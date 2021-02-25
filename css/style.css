@@ -1,4 +1,4 @@
- * {
+* {
   padding: 0;
   margin: 0;
   }
@@ -100,6 +100,58 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   justify-content: space-between;
+  align-items: center;
+}
+
+.menu-button {
+  width: 1.4em;
+  height: 1em;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 25px;
+  position: relative;
+  text-indent: -9999px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-button::before {
+  content: "";
+  width: 100%;
+  height: 20%;
+  top: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.menu-button::after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.menu-button-label {
+  width: 100%;
+  height: 20%;
+  margin-top: -0.1em;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
   align-items: center;
 }
 
@@ -433,7 +485,7 @@ h3 {
 }
 
 .subscribe-button, .product-button :hover {
-  background-color: #323232;
+  background-color:  #b59f5b;
 }
 
 .tags {
@@ -527,7 +579,6 @@ border: 3px solid #ededed;
 }
 .shop-item {
   width: 29.6%;
-  min-width: 346px;
 }
 
 .shop-item:nth-child(1) {
@@ -541,6 +592,8 @@ border: 3px solid #ededed;
 
 .shop-img-item1 {
   background-image: url(../images/shop-item-desk1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   width: 300px;
   height: 204px;
@@ -551,6 +604,8 @@ border: 3px solid #ededed;
 
 .shop-img-item2 {
   background-image: url(../images/shop-item-desk2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   width: 300px;
   height: 204px;
@@ -561,6 +616,8 @@ border: 3px solid #ededed;
 
 .shop-img-item3 {
   background-image: url(../images/shop-item-desk3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   width: 300px;
   height: 204px;
@@ -646,7 +703,6 @@ border: 3px solid #ededed;
   background-color: #b59f5b;
   cursor: pointer;
   text-transform: uppercase;
-  font-family: inherit;
   font-size: 14px;
   font-weight: 700;
   color: #ffffff;
@@ -733,8 +789,19 @@ border: 3px solid #ededed;
 
   .welcome {
   background-image: url("../images/banner-bg-tablet.jpg");
-
   min-width: 640px; 
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
   }
 
   .trend-list {
@@ -804,6 +871,60 @@ border: 3px solid #ededed;
   .shop {
   width: 90%;
   }
+
+  .shop-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  width: 100%;
+}
+.shop-item {
+  width:48%;
+}
+
+.shop-item:nth-child(1) {
+  padding-left: 0;
+}
+
+.shop-item:nth-child(even) {
+  margin-left: auto;
+}
+
+.shop-img-item1 {
+  background-image: url(../images/shop-item-tablet1.jpg);
+  width: 89.3%;
+}
+
+.shop-img-item2 {
+  background-image: url(../images/shop-item-tablet2.jpg);
+  width: 89.3%;
+}
+
+.shop-img-item3 {
+  background-image: url(../images/shop-item-tablet3.jpg);
+  width: 89.3%;
+}
+
+.shop-item-name {
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 19px;
+}
+
+.shop-item-info {
+  width: 98%;
+  border: 3px solid #b59f5b;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:38px;
+  height: 265px;
+  position: relative;
+  z-index: 2;
+  top: -28px;
+}
 
   .footer {
     width: 90%
