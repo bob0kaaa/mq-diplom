@@ -366,7 +366,7 @@ h3 {
   margin-top: 55px;
 }
 
-.p:nth-child(n+2) {
+p:nth-child(n+2) {
   margin-top: 10px;
 }
 
