@@ -527,6 +527,7 @@ border: 3px solid #ededed;
 }
 .shop-item {
   width: 29.6%;
+  min-width: 346px;
 }
 
 .shop-item:nth-child(1) {
