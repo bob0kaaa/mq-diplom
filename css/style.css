@@ -92,6 +92,9 @@ h3 {
 .header-logo {
   width: 180px;
 }
+.header-logo-mobile {
+    display: none;
+  }
 
 .container {
   width: 61.5%;
@@ -195,12 +198,11 @@ h3 {
 .trend-list {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 28px;
-  height: 320px; 
 }
 
 .trend-item {
- width: 24.84%;
+ width: 24.8%;
+ display: flex;
 }
 
 .trend-item:nth-child(n+2) {
@@ -214,9 +216,10 @@ h3 {
   background-size: cover;
   color: #ffffff;
   z-index: 0; 
-  height: 100%;
   display: flex;
   align-items: flex-end;
+  padding: 130px 0 20px 0;
+  width: 100%;
 }
 
 .trend-item-img1 {
@@ -258,13 +261,11 @@ h3 {
   align-content: center;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 20px;
-  padding:38px 0 30px 0;
 }
 
  .trend-contect{
-  margin-left: 34px;
   box-sizing: border-box;
+  padding: 30px 20px 29px 34px;
 }
 
 .trend-name {
@@ -780,7 +781,7 @@ border: 3px solid #ededed;
   font-family: "Open Sans", Arial, sans-serif;
 }
 
-@media (max-width: 1200px) and (min-width: 640px) {
+@media (max-width: 1200px) and (min-width: 641px) {
 
   h1 {
   font-size: 40px;
@@ -804,10 +805,7 @@ border: 3px solid #ededed;
     display: none;
   }
 
-  .trend-list {
-    height: 502px; 
-  }
-
+  
   .trend-item {
     width: 49.89%;
     height: 250px; 
@@ -929,5 +927,200 @@ border: 3px solid #ededed;
   .footer {
     width: 90%
   }
+}
 
+@media (max-width: 640px) and (min-width: 360px) {
+   
+  h1 {
+  font-size: 26px;
+  line-height: 36px;
+  }
+
+  .welcome {
+    background-image: url("../images/banner-mobile.jpg");
+    min-width: 360px;
+    padding: 1.9em 0 12.4em 0;
+  }
+
+  .welcome-title {
+    width: 90%;
+    margin-top: 44px;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-logo-mobile {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    margin-top: 172px;
+  }
+  .container {
+    width: 90%;
+    justify-content: flex-end;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .trend {
+    width: 100%;
+  }
+
+   .trend-item {
+    width: 100%;
+    height: 250px; 
+  }
+
+  .trend-item-img {
+    padding: 130px 0 10px 0;
+}
+
+  .trend-item:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .trend-item:nth-child(n+2):nth-child(-n+4) {
+    margin-top: 1px;
+  }
+
+  .trend-info {
+    padding: 25px 0 18px 0;
+    margin-bottom: 16px;
+  }
+
+  .trend-contect {
+    padding: 10px 20px 0 34px;
+  }
+
+  .home {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+
+  .post-list {
+    width: 100%;
+    padding-left: 0;
+
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post::after {
+    content:"";
+    display: inline-block;
+    width: 100%;
+    height: 3px;
+    background-color: #eeeeee;
+    display:block;
+    margin-top: 44px;
+    margin-bottom: 41px;
+  }
+
+  .post-item {
+    margin-left:  0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .img-post {
+    width: 100%;
+  }
+
+  .post-category {
+    margin-top: 17px;
+  }
+
+  .post-list-item:nth-child(1) {
+    margin-left: 0;
+  }
+
+   .trend-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .side-bar {
+    width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .shop {
+    width: 90%;
+  }
+
+  .shop-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    width: 100%;
+  }
+  .shop-item {
+    width: 100%;
+  }
+
+  .shop-item:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .shop-item:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .shop-img-item1 {
+    background-image: url(../images/shop-item-mobile1.jpg);
+    width: 89.3%;
+    height: 285px;
+  }
+
+  .shop-img-item2 {
+    background-image: url(../images/shop-item-mobile2.jpg);
+    width: 89.3%;
+    height: 285px;
+  }
+
+  .shop-img-item3 {
+    background-image: url(../images/shop-item-mobile3.jpg);
+    width: 89.3%;
+    height: 285px;
+  }
+
+  .shop-item-name {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 19px;
+  }
+
+  .shop-item-info {
+    width: 98%;
+    border: 3px solid #b59f5b;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:38px;
+    height: 265px;
+    position: relative;
+    z-index: 2;
+    top: -28px;
+  }
+
+  .footer {
+    width: 90%
+  }
 }
