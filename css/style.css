@@ -497,7 +497,7 @@ p:nth-child(n+2) {
   font-family: "Open Sans", Arial, sans-serif;
 }
 
-.subscribe-button, .product-button :hover {
+.subscribe-button, .product-link :hover {
   background-color:  #b59f5b;
 }
 
@@ -695,8 +695,7 @@ border: 3px solid #ededed;
   margin-bottom: 6px;
 }
 
-.product-button {
-  height: 49px;
+.product-link {
   width: 140px;
   border: none;
   background-color: #b59f5b;
@@ -706,7 +705,12 @@ border: 3px solid #ededed;
   font-weight: 700;
   color: #ffffff;
   font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+  padding: 15px 28px 15px 28px;
+}
 
+.product-link-shop {
+  text-decoration: none;
 }
 
 .footer {
@@ -850,8 +854,8 @@ border: 3px solid #ededed;
     margin-bottom: 41px;
   }
 
-  .post::after:nth-last-child(-n+1) {
-    display:none;
+  .post:last-child::after {
+    content: none;
   }
 
   .post-item {
