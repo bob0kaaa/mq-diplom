@@ -1,603 +1,1471 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
-  </head>
-  <body>
-      <header class="welcome">
-        <div class="container">
-          <img src="svg/noemi-logo.svg" class="header-logo" alt="logo">
-          <nav class="menu">
-            <button class="menu-button">
-              <span class="menu-button-label">открыть меню</span>
-            </button>
-            <ul class="menu-list">
-              <li class="menu-list-item">
-                <a class="menu-link" href="#home">Главная</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Посты</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Статьи</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Теги</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Темы</a>
-              </li>
-              <li class="menu-list-item">
-                <a class="menu-link" href="#0">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <img src="svg/noemi-logo.svg" class="header-logo-mobile" alt="logo">
-        <h1 class="welcome-title">блог о творчестве, спорте, и образе жизни</h1>
-      </header>
-      <section class="trend">
-        <h2 class="title-trend-name">сейчас в тренде</h2>
-        <div class="trend-list">
-          <div class="trend-item ">
-            <div class="trend-item-img1 trend-item-img">
-              <div class="trend-info">
-                <div class="trend-contect">
-                  <ul class="trend-category">
-                    <li class="trend-list-item">
-                      <a class="trend-category-link" href="#0">lifestyle</a>
-                    </li>
-                    <li class="trend-list-item">
-                      <a class="trend-category-link" href="#0">interior</a>
-                    </li>
-                  </ul>
-                  <h3 class="trend-name"><a class="trend-name-link" href="#0">cейчас в тренде: сад на подоконнике</a></h3>
-                </div>  
-              </div>
-            </div>
-          </div>
-          <div class="trend-item ">
-            <div class="trend-item-img2 trend-item-img">
-              <div class="trend-info">
-                <div class="trend-contect">
-                  <ul class="trend-category">
-                    <li class="trend-list-item">
-                      <a class="trend-category-link" href="#0">food</a>
-                    </li>
-                  </ul>
-                  <h3  class="trend-name"><a class="trend-name-link" href="#0">сыры на красивых картинках из интернета: какие они на вкус?</a></h3>
-                </div>  
-              </div> 
-            </div>
-          </div>
-          <div class="trend-item ">
-            <div class="trend-item-img3 trend-item-img">
-              <div class="trend-info">
-                <div class="trend-contect">
-                  <ul class="trend-category">
-                    <li class="trend-list-item">
-                      <a class="trend-category-link" href="#0">lifestyle</a>
-                    </li>
-                    <li class="trend-list-item">
-                      <a class="trend-category-link" href="#0">travel</a>
-                    </li>
-                  </ul>
-                  <h3 class="trend-name"><a class="trend-name-link" href="#0">собираемся в первый поход в горы</a></h3>
-                </div>  
-              </div>
-            </div>
-          </div>
-          <div class="trend-item ">
-            <div class="trend-item-img4 trend-item-img">
-              <div class="trend-info">
-                <div class="trend-contect">
-                  <ul class="trend-category">
-                    <li class="trend-list-item">
-                      <a class="trend-category-link" href="#0">food</a>
-                    </li>
-                    <li class="trend-list-item">
-                      <a class="trend-category-link" href="#0">health</a>
-                    </li>
-                  </ul>
-                  <h3 class="trend-name"><a class="trend-name-link" href="#0">сейчас в тренде: сколько витамина c в лимонах?</a></h3>
-                </div>  
-              </div>
-            </div>
-          </div>
-        </div>  
-      </section>
-      <div class="home">
-        <main class="post-list">
-          <article class="post">
-            <img src="images/last-post1.jpg" alt="Силуэт человека идущего по пляжу во время заката" class="img-post">
-            <div class="post-item">
-              <div class="post-frame">
-                <ul class="post-category">
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">travel</a>
-                  </li>
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">health</a>
-                  </li>
-                </ul>
-                <div class="post-title">
-                  <h3 class="post-name"><a class="post-name-link" href="#0">10 мест, ради которых стоит проснуться на рассвете</a></h3>
-                </div>
-                <div class="post-info">
-                  <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
-                  <span class="post-author">Неизвестный автор</span>
-                </div>
-              </div>
-              <div class="post-content">
-                <p>
-                  Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушел, запущены фонтаны города... Музеи еще закрыты. Что смотреть?
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="post">
-            <img src="images/last-post2.jpg" alt="девушка занимается йогой на берегу океана" class="img-post">
-            <div class="post-item">
-              <div class="post-frame">
-                <ul class="post-category">
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">health</a>
-                  </li>
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">lifestyle</a>
-                  </li>
-                </ul>
-                <h3 class="post-name"><a class="post-name-link" href="#0">йога для начинающих в домашних условиях</a></h3>
-                <div class="post-info">
-                  <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
-                  <span class="post-author">Неизвестный автор</span>
-                </div>
-              </div>
-              <div class="post-content">
-                <p>
-                  Расскажем, какие упражнения выбрать и как сделать коврик для занятий йогой из того, что можно найти в шкафу.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="post">
-            <img src="images/last-post3.jpg" alt="девушка на концерте под открытым небом" class="img-post">
-            <div class="post-item">
-              <div class="post-frame">
-                <ul class="post-category">
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">music</a>
-                  </li>
-                </ul>
-                <div class="post-title">
-                  <h3 class="post-name"><a class="post-name-link" href="#0">лучшие музыкальные фестивали этого лета</a></h3>
-                </div>
-                <div class="post-info">
-                  <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
-                  <span class="post-author">Неизвестный автор</span>
-                </div>
-              </div>
-              <div class="post-content">
-                <p>
-                  Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
-                </p>
-                <p>
-                  Мы составили список лучших летних фестивалей по всему миру.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="post">
-            <img src="images/last-post4.jpg" alt="Завтрак на столе" class="img-post">
-            <div class="post-item">
-              <div class="post-frame">
-                <ul class="post-category">
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">lifestyle</a>
-                  </li>
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">food</a>
-                  </li>
-                </ul>
-                <div class="post-title">
-                  <h3 class="post-name"><a class="post-name-link" href="#0">наукоёмкий подход к кулинарии</a></h3>
-                </div>
-                <div class="post-info">
-                  <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
-                  <span class="post-author">Неизвестный автор</span>
-                </div>
-              </div>
-              <div class="post-content">
-                <p>
-                  Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="post">
-            <img src="images/last-post5.jpg" alt="подушка с надписью Hang out spot лежит на белом диване" class="img-post">
-            <div class="post-item">
-              <div class="post-frame">
-                <ul class="post-category">
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">lifestyle</a>
-                  </li>
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">interior</a>
-                  </li>
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">art</a>
-                  </li>
-                </ul>
-                <div class="post-title">
-                  <h3 class="post-name"><a class="post-name-link" href="#0">делаем модные принты на подушках для интерьера </a></h3>
-                </div>
-                <div class="post-info">
-                  <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
-                  <span class="post-author">Неизвестный автор</span>
-                </div>
-              </div>
-              <div class="post-content">
-                <p>
-                  Подушки для дивана целесообразнее заказать в съемных чехлах на молнии, если потребуется чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="post">
-            <img src="images/last-post6.jpg" alt="девушка стоит на скале и смотрит вниз" class="img-post">
-            <div class="post-item">
-              <div class="post-frame">
-                <ul class="post-category">
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">travel</a>
-                  </li>
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">lifestyle</a>
-                  </li>
-                </ul>
-                <div class="post-title">
-                  <h3 class="post-name"><a class="post-name-link" href="#0">Как первый раз отправиться в горы?</a></h3>
-                </div>
-                <div class="post-info">
-                  <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
-                  <span class="post-author">Неизвестный автор</span>
-                </div>
-              </div>
-              <div class="post-content">
-                <p>
-                  Для начала нужно определиться, в каком формате пройдёт ваше путешествие. Это зависит от многих факторов, не только от ваших желаний и интересов.
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="post">
-            <img src="images/last-post4.jpg" alt="Завтрак на столе" class="img-post">
-            <div class="post-item">
-              <div class="post-frame">
-                <ul class="post-category">
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">lifestyle</a>
-                  </li>
-                  <li class="post-list-item">
-                    <a class="post-category-link" href="#0">food</a>
-                  </li>
-                </ul>
-                <div class="post-title">
-                  <h3 class="post-name"><a class="post-name-link" href="#0">наукоёмкий подход к кулинарии</a></h3>
-                </div>
-                <div class="post-info">
-                  <time class="post-date" datetime="2019-06-10">10 июня 2019</time>
-                  <span class="post-author">Неизвестный автор</span>
-                </div>
-              </div>
-              <div class="post-content">
-                <p>
-                  Узнаем основы проектирования новых пищевых и около-пищевых опытов, вскроем физику, химию и микробиологию еды.
-                </p>
-              </div>
-            </div>
-          </article>
-        </main>
-        <aside class="side-bar">
-          <section class="latest-posts">
-            <h2 class="title-latest-post">новые посты</h2>
-            <div class="latest-posts-search">
-              <div class="latest-post-list">
-                <article class="latest-post">
-                  <img src="images/2.jpg" alt="Силуэт человека идущего по пляжу во время заката">
-                  <div class="latest-post-content">
-                    <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <div class="latest-post-name">
-                      <h3><a class="latest-name-link" href="#0">10 мест, ради которых стоит проснуться</a></h3>
-                    </div>
-                  </div>
-                </article>
-                <article class="latest-post">
-                  <img src="images/151.jpg" alt="девушка занимается йогой на пляже">
-                  <div class="latest-post-content">
-                    <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <div class="latest-post-name">
-                      <h3><a class="latest-name-link" href="#0">йога для домашних</a></h3>
-                    </div>
-                  </div>
-                </article>
-                <article class="latest-post">
-                  <img src="images/45.jpg" alt="стильное кожаное кресло около окна">
-                  <div class="latest-post-content">
-                    <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <div class="latest-post-name">
-                      <h3><a class="latest-name-link" href="#0">как мы превратили классное место в балкон</a></h3>
-                    </div>
-                  </div>
-                </article>
-                <article class="latest-post">
-                  <img src="images/501.jpg" alt="еда на столе">
-                  <div class="latest-post-content">
-                    <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <div class="latest-post-name">
-                      <h3><a class="latest-name-link" href="#0">кулинарный подход к науке</a></h3>
-                    </div>
-                  </div>
-                </article>
-                <article class="latest-post">
-                  <img src="images/7.jpg" alt="три девушки стоящие спиной с распущенными волосами">
-                  <div class="latest-post-content">
-                    <time class="post-date" datetime="2019-06-14">14 июня 2019</time>
-                    <div class="latest-post-name">
-                      <h3 class=""><a class="latest-name-link" href="#0">лучшие прически для распущенных волос</a></h3>
-                    </div>
-                  </div>
-                </article>
-              </div>
-              <form class="search">
-                <label class="search-label">
-                  <input class="search-field" name="query" placeholder="Найти..." required>
-                  <span class="visually-hidden">поле ввода для поиска</span>
-                </label>
-                <label class="search-button-label">
-                  <button class="search-button"><span class="visually-hidden">Кнопка поиска</span></button>
-                </label>
-              </form>
-            </div>
-          </section>
-          <section class="subscribe">
-            <form class="subscribe-form">
-              <h2 class="title-subscribe">рассылка</h2>
-              <label>
-                <span class="visually-hidden">подписаться</span>
-                <input type="email" class="subscribe-field" name="email" placeholder="Ваш email-адрес" required>
-              </label>
-              <button type="submit" class="subscribe-button">подписаться</button>
-            </form>
-          </section>
-          <section class="tags">
-            <h2 class="title-tags">теги</h2>
-            <ul class="tage-list">
-              <li class="tage-item"><a class="tage-item-link" href="#0">fashion</a></li>
-              <li class="tage-item"><a class="tage-item-link" href="#0">music</a></li>
-              <li class="tage-item"><a class="tage-item-link" href="#0">lifestyle</a></li>
-              <li class="tage-item"><a class="tage-item-link" href="#0">art</a></li>
-              <li class="tage-item"><a class="tage-item-link" href="#0">interior</a></li>
-              <li class="tage-item"><a class="tage-item-link" href="#0">travel</a></li>
-              <li class="tage-item"><a class="tage-item-link" href="#0">food</a></li>
-              <li class="tage-item"><a class="tage-item-link" href="#0">health</a></li>
-            </ul>
-          </section>
-          <section class="categories">
-            <h2 class="title-categories">темы</h2>
-            <div class="categories-group">
-              <ul class="categories-list">
-                <li class="categories-item"><a class="categories-item-link" href="#0">Красота<sup><small class="quantity">12</small></sup></a></li>
-                <li class="categories-item"><a class="categories-item-link" href="#0">Здоровье<sup><small class="quantity">4</small></sup></a></li>
-                <li class="categories-item"><a class="categories-item-link" href="#0">Образ жизни<sup><small class="quantity">145</small></sup></a></li>
-                <li class="categories-item"><a class="categories-item-link" href="#0">Музыка<sup><small class="quantity">28</small></sup></a></li>
-                <li class="categories-item"><a class="categories-item-link" href="#0">Спорт<sup><small class="quantity">62</small></sup></a></li>
-                <li class="categories-item"><a class="categories-item-link" href="#0">Йога<sup><small class="quantity">8</small></sup></a></li>
-              </ul>
-            </div>
-          </section>
-        </aside>
-      </div>
-      <section class="shop">
-        <h2 class="title-shop">наши изделия</h2>
-        <div class="shop-list">
-          <div class="shop-item">
-            <div class="shop-img-item">
-              <picture>
-                <source
-                  media="(max-width: 1200px) and (min-width: 641px)"
-                  srcset="images/shop-item-tablet1.jpg">
-                <source
-                  media="(max-width: 640px) and (min-width: 360px)"
-                  srcset="images/shop-item-mobile1.jpg">
-                <img 
-                  src="images/shop-item-desk1.jpg"
-                  alt="фото изделия"
-                  class="shop-img">
-              </picture>
-            </div>
-            <div class="shop-item-info">
-              <div class="shop-item-name">
-                <h3 class="shop-item-title">подушка на диван</h3>
-              </div>
-              <div class="shop-item-content">
-                <p>
-                  Набор из двух подушек с модными принтами. Видео о создании <a href="" class="shop-link-p">здесь</a>.
-                </p>
-              </div>
-              <div class="product-footer">
-                <div class="product-price-block">
-                  <span class="product-price-old product-price">
-                    <span class="old-product-price">1000</span>
-                    <span class="product-rub">₽</span>
-                  </span>
-                  <span class="product-price ">
-                    <span class="value-product-price">800</span>
-                    <span class="product-rub">₽</span>
-                  </span>
-                </div>
-                <a href="" class="product-link-shop"><span class="product-link">в магазин</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="shop-item">
-            <div class="shop-img-item">
-              <picture>
-                <source
-                  media="(max-width: 1200px) and (min-width: 641px)"
-                  srcset="images/shop-item-tablet2.jpg">
-                <source
-                  media="(max-width: 640px) and (min-width: 360px)"
-                  srcset="images/shop-item-mobile2.jpg">
-                <img 
-                  src="images/shop-item-desk2.jpg"
-                  alt="фото изделия"
-                  class="shop-img">
-              </picture>
-            </div>
-            <div class="shop-item-info">
-              <div class="shop-item-name">
-                <h3 class="shop-item-title">кукла «зайчик»</h3>
-              </div>
-              <div class="shop-item-content">
-                <p>
-                  Интерьерная рукодельная кукла «Зайчик», созданию которой посвящена <a href="" class="shop-link-p">весенняя серия постов</a> в блоге и несколько подкастов.
-                </p>
-              </div>
-              <div class="product-footer">
-                <div class="product-price-block">
-                  <span class="product-price ">
-                    <span class="value-product-price">3500</span>
-                    <span class="product-rub">₽</span>
-                  </span>
-                </div>
-                <a href="" class="product-link-shop"><span class="product-link">в магазин</span></a>
-              </div>
-            </div>
-          </div>
-          <div class="shop-item">
-            <div class="shop-img-item">
-              <picture>
-                <source
-                  media="(max-width: 1200px) and (min-width: 641px)"
-                  srcset="images/shop-item-tablet3.jpg">
-                <source
-                  media="(max-width: 640px) and (min-width: 360px)"
-                  srcset="images/shop-item-mobile3.jpg">
-                <img 
-                  src="images/shop-item-desk3.jpg"
-                  alt="фото изделия"
-                  class="shop-img">
-              </picture>
-            </div>
-            <div class="shop-item-info">
-              <div class="shop-item-name">
-                 <h3 class="shop-item-title">шестиугольная рамка</h3>
-              </div>
-              <div class="shop-item-content">
-                <p>
-                  Необычная рамка для украшения дома из видео <a href="" class="shop-link-p">«Как сделать рамку из подручных средств за 30 минут»</a>.
-                </p>
-              </div>
-              <div class="product-footer">
-                <div class="product-price-block">
-                  <span class="product-price-old product-price">
-                    <span class="old-product-price">500</span>
-                    <span class="product-rub">₽</span>
-                  </span>
-                  <span class="product-price ">
-                    <span class="value-product-price">400</span>
-                    <span class="product-rub">₽</span>
-                  </span>
-                </div>
-                <a href="" class="product-link-shop"><span class="product-link">в магазин</span></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <footer>
-        <div class="footer">
-          <address class="articles-socials">
-            <ul class="socials-list">
-              <li class="social-item">
-                <a href="#0" class="social-logo-link logo-img-twitter">
-                  <span class="visually-hidden">twitter</span>
-                </a>
-              </li>
-              <li class="social-item">
-                <a href="#0" class="social-logo-link logo-img-pinterest">
-                  <span class="visually-hidden">pinterest</span>
-                </a>
-              </li>
-              <li class="social-item">
-                <a href="#0" class="social-logo-link logo-img-facebook">
-                  <span class="visually-hidden">facebook</span>
-                </a>
-              </li>
-              <li class="social-item">
-                <a href="#0" class="social-logo-link logo-img-instagram">
-                  <span class="visually-hidden">instagram</span>
-                </a>
-              </li>
-              <li class="social-item">
-                <a href="#0" class="social-logo-link logo-img-tumblr">
-                  <span class="visually-hidden">tumblr</span>
-                </a>
-              </li>
-            </ul>
-          </address>
-        </div>
-        <div class="copyrights">
-          <span>Copyright © 2009–2019 City Blog LLC.</span>
-        </div>
-      </footer>
-      <!-- Popap -->
-      <div class="popup">
-        <div class="popup-panel">
-        <button class="popup-close" type="button"></button>
-        <div class="page">
-          <h2>ваш фидбек</h2>
-          <form class="form">
-            <div class="form-group">
-              <label class="select-group">
-                <span class="select-label">Как часто вы заходите на сайт?</span>
-                <select class="select">
-                  <option value="every-other_day" selected>Через день</option>
-                  <option value="almost-every-day" selected>Почти каждый день</option>
-                  <option value="every-day">Каждый день</option>
-                </select>
-              </label>
-            </div>
-            <div>
-              <span class="radio-label">Вы подписаны на e-mail рассылку?</span>
-              <div class="panel-radio">
-                <label class="radio-button">
-                  <input name="dzen" type="radio" value="yes" class="radio-point"><span class="text-radio">Да</span>
-                </label> 
-                <label class="radio-button"> 
-                  <input name="dzen" type="radio" value="no" class="radio-point"><span class="text-radio">Нет</span>
-                </label> 
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="field-group">
-                <span class="field-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-                <textarea class="field-textarea" placeholder="Может, больше рецептов?" required></textarea>
-              </label>
-            </div>
-            <div class="form-group form-actions">
-              <button class="button button-submit" type="submit">отправить</button>
-            </div>
-          </form>
-        </div>
-        
-      </div>
-      </div>
-      <!-- Popap End-->
-  </body>
-</html>
+* {
+  padding: 0;
+  margin: 0;
+  }
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Bold.woff) ;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/OpenSans-Regular.woff) ;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  line-height: 75px;
+  font-size: 45px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h2 {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+h2::after {
+  content:"";
+  display: inline-block;
+  width: 66px;
+  height: 3px;
+  background-color: #e1d9bd;
+  display:block;
+  margin: auto;
+  margin-top: 14px;
+  margin-bottom: 29px;
+}
+
+h3 {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.welcome {
+  background-image: url("../images/banner-bg.jpg");  
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+  z-index: 0;
+  
+  min-width: 1200px;  
+  
+  padding: 30px 0 170px 0;
+  text-transform: uppercase;
+}
+
+.welcome::after {
+  content:"";
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+.welcome-title {
+  width: 37.84%;
+  display: flex;
+  margin-top: 128px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.header-logo {
+  width: 180px;
+}
+.header-logo-mobile {
+    display: none;
+  }
+
+.container {
+  width: 61.5%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-button {
+  width: 1.4em;
+  height: 1em;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-size: 25px;
+  position: relative;
+  text-indent: -9999px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-button::before {
+  content: "";
+  width: 100%;
+  height: 20%;
+  top: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.menu-button::after {
+  content: "";
+  width: 100%;
+  height: 20%;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+}
+
+.menu-button-label {
+  width: 100%;
+  height: 20%;
+  margin-top: -0.1em;
+  border-radius: 5px;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0; 
+  
+  font-family: "Open Sans", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.menu-list-item:nth-child(n+2){
+  margin-left: 35px;
+}
+
+.menu-link {
+  text-decoration: none;
+  font-size: 13px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.home {
+  margin-top: 64px;
+  width: 61.5%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.trend {
+  margin-top: 63px;
+}
+
+.title-trend-name,
+.title-shop {
+  font-size: 20px;
+}
+
+.trend-list {
+  display: flex;
+  flex-wrap: wrap;
+  height: 320px;
+}
+
+.trend-item {
+ width: 24.8%;
+ display: flex;
+}
+
+.trend-item:nth-child(n+2) {
+  margin-left: 0.21%;
+}
+
+.trend-item-img { 
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: #ffffff;
+  z-index: 0; 
+  display: flex;
+  align-items: flex-end;
+  padding: 20px 0 20px 0;
+  width: 100%;
+}
+
+.trend-item-img1 {
+  background-image: url("../images/trend1.jpg");
+  
+}
+
+.trend-item-img2 {
+  background-image: url("../images/trend2.jpg");
+ }
+
+.trend-item-img3 {
+  background-image: url("../images/trend3.jpg");
+}
+
+.trend-item-img4 {
+  background-image: url("../images/trend4.jpg");
+}
+
+ 
+.trend-item-img::after {
+  content:"";
+  background-color: #000000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+  z-index: -1;
+}
+
+
+.trend-info {
+  width: 78.4%;
+  border: 3px solid #b59f5b;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ .trend-contect{
+  box-sizing: border-box;
+  padding: 30px 20px 29px 34px;
+}
+
+.trend-list-item:nth-child(n+2) {
+  margin-left: 20px;
+}
+
+.trend-name-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.post {
+  display: flex;
+  align-items: flex-start;
+}
+
+.post:nth-child(n+2){
+  margin-top: 60px;
+}
+
+.title-latest-post,
+.title-subscribe,
+.title-tags,
+.title-categories {
+  font-size: 14px;
+}
+
+.post-list {
+  padding-left: 15px;
+  width: 67.7%;
+}
+
+
+.post-item {
+  margin-left: 4%;
+  width: 50.4%;
+}
+
+
+
+.post-category, .trend-category {
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.post-list-item:nth-child(n+2) {
+  margin-left: 20px;
+}
+
+.post-category-link, 
+.trend-category-link {
+  font-size: 14px;
+  color: #b59f5b; 
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.post-category-link:hover {
+  text-decoration: underline;
+  text-shadow: #b59f5b 0 0 1px; 
+}
+
+.trend-category-link:hover {
+  text-decoration: underline;
+  text-shadow: #b59f5b 0 0 1px; 
+}
+
+.post-name {
+  margin-top: 14px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.post-name-link {
+  color: #0f0d0e;
+  text-decoration: none;
+}
+
+.post-name-link:hover {
+  text-shadow: #0f0d0e 0 0 1px;
+}
+
+.post-info {
+  margin-top: 36px;
+}
+
+.post-date {
+  font-size: 12px;
+  font-weight: 400;
+  color: #888888;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.post-author {
+  font-size: 12px;
+  font-weight: 700;
+  color: #000000;
+  margin-left: 13px;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.post-content {
+  margin-top: 0;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
+  margin-top: 55px;
+}
+
+p:nth-child(n+2) {
+  margin-top: 10px;
+}
+
+.side-bar {
+  width: 24%;
+  padding-right: 15px;
+  margin-left: auto;
+}
+
+.latest-post-list {
+  margin-top: 29px;
+}
+
+.latest-post {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.latest-post:nth-child(n+2) {
+  margin-top: 22px;
+}
+
+
+.latest-post-content {
+  margin-left: 20px;
+  margin-top: 0px;
+}
+
+.latest-post-name {
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 5px;
+}
+
+.latest-name-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: #0f0d0e;
+  text-decoration: none;
+}
+
+.latest-name-link:hover {
+  text-shadow: #0f0d0e 0 0 1px;
+}
+
+.search {
+  display:flex;
+  margin-top: 60px;
+}
+
+.search-label {
+  width: 100%;
+  padding: 0 3px;
+}
+
+.search-field {
+  font-size: 13px;
+  color: #919392;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
+  border: 0px;
+  background-color: #f4f7f6;
+  width: calc(100% - 21px);
+  padding: 15px 3px 15px 18px;
+}
+
+.search-button {
+  height: 48px;
+  width: 48px;
+  background-color: #b59f5b;
+  background-image: url(../svg/search.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 18px 18px;
+  border: 0px solid #f4f7f6;
+}
+
+.search-button:hover {
+  background-color: #323232;
+}
+
+.subscribe-form {
+  margin-top: 62px;
+  display: block;
+}
+
+.subscribe-field {
+  padding: 14px 3px 14px 18px;
+  font-size: 13px;
+  width: calc(100% - 20px);
+  color: #919392;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
+  border: 0px;
+  background-color: #f4f7f6;
+}
+
+.subscribe-field:focus, .search-field:focus {
+  outline: none;
+  padding: 14px 3px 14px 18px;
+  border: 1px solid #b59f5b;
+}
+
+.subscribe-button {
+  margin-top: 16px;
+  padding: 14px;
+  width: 100%;
+  background-color: #b59f5b;
+  border: 1px solid #b59f5b;
+  
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.subscribe-button, .product-link :hover {
+  background-color:  #b59f5b;
+}
+
+.tags {
+  margin-top: 62px;
+}
+
+.tage-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tage-item {
+  font-size: 12px;
+  color: #0f0d0e;
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-transform: uppercase;
+  border: 3px solid #ededed;
+  margin-bottom: 6px;
+  margin-right: 5px;
+}
+
+.tage-item:hover {
+border: 3px solid #ededed;
+}
+
+.tage-item-link {
+  text-decoration: none;
+  color: #0f0d0e;
+  padding: 8px 14px 6px 13px;
+}
+
+.tage-item-link:hover {
+  text-shadow: #0f0d0e 0 0 1px;
+}
+
+.categories {
+  margin-top: 60px;
+}
+
+.categories-list {
+  display: block;
+  list-style: none;
+}
+
+.categories-item {
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 12px;
+}
+
+.categories-item:nth-child(n+2) {
+  padding-top: 12px;
+}
+
+.categories-item-link {
+  text-decoration: none;
+  color: #0f0d0e;
+  padding: 0 0 0 2px;
+}
+
+.categories-item-link:hover {
+  color: #b59f5b;
+}
+
+.quantity {
+  font-size: 12px;
+  margin-left: 5px;
+  color: #b59f5b;
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.shop {
+  margin-top: 62px;
+  width: 61.5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.shop-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  width: 100%;
+}
+.shop-item {
+  width: calc((100% - 96px)/3);
+}
+
+.shop-item-title {
+  margin-top: 14px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.shop-item:nth-child(even) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.shop-img {
+  width: 100%;
+  height: auto;
+}
+
+.shop-img-item {
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  width: 300px;
+  height: 204px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+}
+
+.shop-item-name {
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 19px;
+}
+
+.shop-item-info {
+  width: calc(100% - 6px);
+  border: 3px solid #b59f5b;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:38px;
+  height: 265px;
+  position: relative;
+  z-index: 2;
+  top: -28px;
+  align-content: flex-start;
+}
+
+.shop-item-content {
+  font-size: 15px;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
+  padding: 14px 19px 0 19px;
+}
+
+.shop-link-p {
+  text-decoration: none;
+  color: #baa464;
+}
+
+.shop-link-p:hover {
+  text-decoration: underline;
+  text-shadow: #b59f5b 0 0 10px; 
+}
+
+.product-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-right: 23px;
+  margin-bottom: 68px;
+  margin-left: 19px;
+  margin-top: 27px;
+}
+
+.product-price-block {
+  
+}
+
+.product-price {
+  display: flex;
+  margin-top: 
+  color: #0f0d0e;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+.product-price-old {
+  text-decoration: line-through;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.product-link {
+  width: 140px;
+  border: none;
+  background-color: #b59f5b;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  text-align: center;
+  padding: 15px 28px 15px 28px;
+}
+
+.product-link-shop {
+  text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  width: 61.5%;
+  background-color: #f4f7f6;
+  margin-top: 64px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.articles-socials {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.socials-list {
+  display: flex;
+  list-style: none;
+}
+
+.social-item:nth-child(n+2) {
+  margin-left: 28px;
+}
+
+.social-logo-link {
+ display: block;
+ width: 24px;
+ padding: 43px 0 43px 0;
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: 24px;
+}
+
+.logo-img-twitter {
+  background-image: url("../svg/004-twitter.svg");
+}
+
+.logo-img-pinterest {
+  background-image: url("../svg/001-pinterest.svg");
+}
+
+.logo-img-facebook {
+  background-image: url("../svg/002-facebook-logo.svg");
+}
+
+.logo-img-instagram {
+  background-image: url("../svg/005-instagram.svg");
+}
+
+.logo-img-tumblr {
+  background-image: url("../svg/003-tumblr.svg");
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+} 
+
+.copyrights {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-top: 74px;
+  margin-bottom: 41px;
+  color: #b8b8b8;
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+/*-------------------------------Popup----------------------------------------*/
+.popup {
+  margin-top: 60px;
+  width: 100%;
+  height: 640px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+}
+
+.popup-panel {
+  height: 620px;
+  width: 400px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+}
+
+.page {
+  padding: 20px;
+  width: 356px;
+  height: 556px;
+  margin-bottom: 60px;
+  border: 2px solid #e2d8b5;
+  background-color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
+  
+}
+
+.field-textarea {
+  font-weight: 400;
+  min-height: 150px;
+  margin-top: 12px;
+  width: 93%;
+  font-size: 14px;
+  border: 2px solid #dadada;
+  padding: 10px;
+}
+
+.panel-radio {
+  display: flex;
+}
+
+.radio-button {
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.radio-button:nth-child(n+2) {
+  margin-left: 10px;
+}
+
+.radio-point {
+  position: absolute;
+  clip: rect(1px,1px,1px,1px);
+  height: 1px;
+  width: 1px;
+}
+
+.text-radio {
+  display: inline-block;
+  font-weight: 400;
+}
+
+.radio-label {
+  font-weight: 400;
+}
+
+.text-radio::before {
+    content: "";
+    margin-right: 8px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../svg/form-empty-circle.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 20px;
+}
+
+.radio-point:checked ~ .text-radio::before {
+  background-image: url("../svg/form-circle.svg")
+}
+
+.radio-point:nth-child(n+2) {
+  margin-left: 10px;
+}
+
+.form-group {
+  font-weight: 400;
+}
+
+.form-actions {
+  margin-top: 10px;
+}
+
+.select-label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+
+.select {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 46px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-left: 10px;
+  padding-right: 25px;
+  margin: 0;
+  border: 0px solid #e2d8b5;
+  background-color: #f9f9f9;
+  background-image: url("../svg/form-arrows.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 10px;
+  font-size: 14px;
+  font-family: Arial,sans-serif;
+  color: #7f8180;
+  border: 2px solid #dadada;
+  margin-bottom: 10px;
+}
+
+.field {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border: 2px solid #dadada;
+    margin: 0;
+    font-size: 13px;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.field-label {
+  margin-bottom: 12px;
+}
+
+.button-submit {
+  color: #ffffff;
+  background-color: #b69f5b;
+}
+
+.button {
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+
+}
+.button:hover {
+    background-color: #b39c59;
+}
+
+.popup-close {
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  background-image: url(../svg/form-x.svg);
+  border: none;
+  background-color: initial;
+  margin-top: 10px;
+}
+/*-------------------------------End_Popup-------------------------------------*/
+
+@media (max-width: 1200px) and (min-width: 640px) {
+
+  h1 {
+  font-size: 40px;
+  line-height: 55px;
+  }
+
+  .welcome {
+  background-image: url("../images/banner-bg-tablet.jpg");
+  min-width: auto; 
+  }
+
+  .welcome-title {
+    width: 90%;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .trend-list{
+    height: auto;
+  }
+
+  .trend-item {
+    width: 49.89%;
+    height: auto;
+  }
+
+  .trend-item:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .trend-item:nth-child(n+3):nth-child(-n+4) {
+    margin-top: 2px;
+  }
+
+  .title-trend-name, .title-shop {
+    font-size: 18px;
+  }
+
+  .home {
+    width: 90%
+  }
+
+  .post-list {
+    width: 57%;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post::after {
+    content:"";
+    width: 100%;
+    height: 3px;
+    background-color: #eeeeee;
+    display:block;
+    margin-top: 44px;
+    margin-bottom: 41px;
+  }
+
+  .post:last-child::after {
+    content: none;
+  }
+
+  .post-item {
+    margin-left:  0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .post-category {
+    margin-top: 17px;
+  }
+
+  .post-list-item:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .post-name, .trend-name, .shop-item-title{
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .side-bar {
+    width: 40%;
+    margin-left: 35px;
+  }
+
+  .shop {
+  width: 90%;
+  }
+
+  .shop-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  width: 100%;
+  }
+  .shop-item {
+    width:48%;
+  }
+
+  .shop-item:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .shop-item:nth-child(even) {
+    margin-left: auto;
+  }
+
+  .shop-img-item1 {
+    width: 89.3%;
+  }
+
+  .shop-img-item2 {
+    width: 89.3%;
+  }
+
+  .shop-img-item3 {
+    width: 89.3%;
+  }
+
+  .shop-item-name {
+    font-size: 20px;
+    line-height: 24px;
+    margin-left: 19px;
+  }
+
+  .shop-item-info {
+    width: 98%;
+    border: 3px solid #b59f5b;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:38px;
+    height: 265px;
+    position: relative;
+    z-index: 2;
+    top: -16px;
+  }
+
+    .footer {
+      width: 90%
+    }
+
+    .popup-close {
+
+    }
+}
+
+@media (width: 640px) {
+  .home {
+    width: 99%
+  }
+
+  .post-list {
+    width: 57%;
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post::after {
+    content:"";
+    width: 100%;
+    height: 3px;
+    background-color: #eeeeee;
+    display:block;
+    margin-top: 44px;
+    margin-bottom: 41px;
+  }
+
+  .post::after:nth-last-child(-n+1) {
+    display:none;
+  }
+
+  .post-item {
+    margin-left:  0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .post-category {
+    margin-top: 17px;
+  }
+
+  .post-list-item:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .post-name, .trend-name, .shop-item-title{
+    font-size: 17px;
+    line-height: 22px;
+  }
+
+  .side-bar {
+    width: 40%;
+    margin-left: 35px;
+  }
+
+  .shop {
+  width: 99%;
+  }
+
+  .shop-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 28px;
+  width: 100%;
+}
+.shop-item {
+  width:48%;
+}
+
+.shop-item:nth-child(1) {
+  padding-left: 0;
+}
+
+.shop-item:nth-child(n+3) {
+  margin-top: 110px;
+}
+.shop-item:nth-child(even) {
+  margin-left: auto;
+}
+
+.shop-img-item {
+  width: 89.3%;
+}
+
+.shop-item-name {
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 19px;
+}
+
+.shop-item-info {
+  width: 98%;
+  border: 3px solid #b59f5b;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top:38px;
+  height: 265px;
+  position: relative;
+  z-index: 2;
+  top: 40px;
+}
+
+  .footer {
+    width: 90%
+  }
+
+  .popup-close {
+  }
+}
+
+@media (max-width: 639px) and (min-width: 359px) {
+   
+  h1 {
+  font-size: 26px;
+  line-height: 36px;
+  }
+
+  .welcome {
+    background-image: url("../images/banner-mobile.jpg");
+    min-width: auto; 
+    padding: 1.9em 0 12.4em 0;
+  }
+
+  .welcome-title {
+    width: 90%;
+    margin-top: 44px;
+  }
+
+  .header-logo {
+    display: none;
+  }
+
+  .header-logo-mobile {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 60px;
+    margin-top: 172px;
+  }
+  .container {
+    width: 90%;
+    justify-content: flex-end;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .trend {
+    width: 100%;
+  }
+
+  .trend-list {
+    height: auto;
+  }
+
+   .trend-item {
+    width: 100%;
+    height: 250px; 
+  }
+
+  .trend-item-img {
+    padding: 130px 0 10px 0;
+}
+
+  .trend-item:nth-child(n+2) {
+    margin-left: 0;
+  }
+
+  .trend-item:nth-child(n+2):nth-child(-n+4) {
+    margin-top: 1px;
+  }
+
+  .trend-info {
+    padding: 25px 0 18px 0;
+    margin-bottom: 16px;
+  }
+
+  .trend-contect {
+    padding: 10px 20px 0 34px;
+  }
+
+  .home {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+  }
+
+  .title-latest-post,
+  .title-subscribe,
+  .title-tags,
+  .title-categories {
+    font-size: 16px;
+    line-height: 29px;
+  }
+
+  .post-list {
+    width: 100%;
+    padding-left: 0;
+
+  }
+
+  .post {
+    flex-direction: column;
+  }
+
+  .post::after {
+    content:"";
+    width: 100%;
+    height: 3px;
+    background-color: #eeeeee;
+    display:block;
+    margin-top: 44px;
+    margin-bottom: 41px;
+  }
+
+  .post-item {
+    margin-left:  0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .post-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .img-post {
+    width: 100%;
+  }
+
+  .post-category {
+    margin-top: 17px;
+  }
+
+  .post-list-item:nth-child(1) {
+    margin-left: 0;
+  }
+
+   .trend-name {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .side-bar {
+    width: 100%;
+    margin-left: 0;
+    padding-right: 0;
+  }
+
+  .shop {
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .shop-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 28px;
+    width: 100%;
+  }
+  .shop-item {
+    width: 100%;
+  }
+
+  .shop-item:nth-child(n+2) {
+    margin-top: 110px;
+  }
+
+  .shop-item:nth-child(1) {
+    padding-left: 0;
+  }
+
+  .shop-item:nth-child(even) {
+    margin-left: 0;
+  }
+
+  .shop-img-item1 {
+    width: 89.3%;
+    height: 285px;
+  }
+
+  .shop-img-item2 {
+    width: 89.3%;
+    height: 285px;
+  }
+
+  .shop-img-item3 {
+    width: 89.3%;
+    height: 285px;
+  }
+
+  .shop-item-name {
+    margin-left: 19px;
+  }
+
+  .shop-item-info {
+    width: 98%;
+    border: 3px solid #b59f5b;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:38px;
+    height: 265px;
+    position: relative;
+    z-index: 2;
+    top: 60px;
+  }
+
+  .footer {
+    width: 90%
+  }
+
+  .page {
+    padding: 20px;
+    width: 83%;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .popup-close {
+  }
+
+  .field-textarea {
+    width: 93%;
+    font-size: 12px;
+    min-height: 150px;
+    margin-top: 12px;
+    width: 93%;
+    font-size: 14px;
+    border: 2px solid #dadada;
+    padding: 10px;
+  }
+}
