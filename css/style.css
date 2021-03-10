@@ -786,48 +786,65 @@ border: 3px solid #ededed;
 }
 
 /*-------------------------------Popup----------------------------------------*/
-.popup {
-  margin-top: 60px;
+#popup {
+  
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
   width: 100%;
-  height: 640px;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.75);
-  display: flex;
-  flex-wrap: wrap;
-  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
 
-.popup-panel {
+#popup-panel {
   height: 620px;
-  width: 400px;
+  width: 390px;
   margin-right: auto;
   margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: end;
+  position: fixed;
+  top: 200px;
+  left: 40%;
+  opacity: 1;
+  -moz-opacity:1;
+  -khtml-opacity:1;
+  opacity: 1;
 }
 
 .page {
-  padding: 20px;
-  width: 356px;
-  height: 556px;
+  padding: 30px;
+  width: 330px;
+  height: 550px;
   margin-bottom: 60px;
-  border: 2px solid #e2d8b5;
   background-color: #FFFFFF;
   font-size: 14px;
   font-weight: 400;
   font-family: "Open Sans", Arial, sans-serif;
-  
+
+}
+
+.popup-title {
+  font-size: 20px;
+  line-height: 29px;
 }
 
 .field-textarea {
-  font-weight: 400;
-  min-height: 150px;
+  min-height: 110px;
+  max-height: 110px;
+  min-width: 310px;
+  max-width: 310px;
   margin-top: 12px;
-  width: 93%;
-  font-size: 14px;
-  border: 2px solid #dadada;
+  width: 100%;
+  border: 0px solid #f4f7f6;
   padding: 10px;
+  background-color: #f4f7f6;
+  font-size: 13px;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Open Sans", Arial, sans-serif;
 }
 
 .panel-radio {
@@ -836,7 +853,7 @@ border: 3px solid #ededed;
 
 .radio-button {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 34px;
   margin-top: 10px;
 }
 
@@ -854,10 +871,16 @@ border: 3px solid #ededed;
 .text-radio {
   display: inline-block;
   font-weight: 400;
+  font-size: 13px;
+}
+
+.popup-panel-radio {
+  margin-top: 33px;
 }
 
 .radio-label {
   font-weight: 400;
+  font-size: 13px;
 }
 
 .text-radio::before {
@@ -886,13 +909,15 @@ border: 3px solid #ededed;
 }
 
 .form-actions {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .select-label {
   display: block;
   margin-bottom: 12px;
   font-weight: 400;
+  font-size: 13px;
+  line-height: 40px;
 }
 
 .select {
@@ -906,16 +931,15 @@ border: 3px solid #ededed;
   padding-right: 25px;
   margin: 0;
   border: 0px solid #e2d8b5;
-  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  background-color: #f4f7f6;
   background-image: url("../svg/form-arrows.svg");
   background-repeat: no-repeat;
-  background-position: right 10px center;
+  background-position: right 14px center;
   background-size: 10px;
   font-size: 14px;
   font-family: Arial,sans-serif;
-  color: #7f8180;
-  border: 2px solid #dadada;
-  margin-bottom: 10px;
+  color: #828383;
 }
 
 .field {
@@ -932,6 +956,7 @@ border: 3px solid #ededed;
 
 .field-label {
   margin-bottom: 12px;
+  font-size: 13px;
 }
 
 .button-submit {
@@ -941,11 +966,16 @@ border: 3px solid #ededed;
 
 .button {
   text-transform: uppercase;
-  font-size: 14px;
-  padding: 15px 25px;
+  padding-top: 3.5px;
   border: none;
   cursor: pointer;
   width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 40px;
+  color: #ffffff;
+  font-weight: 700;
+  font-family: "Open Sans", Arial, sans-serif;
 
 }
 .button:hover {
@@ -953,13 +983,15 @@ border: 3px solid #ededed;
 }
 
 .popup-close {
-  width: 20px;
-  height: 20px;
+  width: 17px;
+  height: 17px;
   font-size: 20px;
   background-image: url(../svg/form-x.svg);
   border: none;
   background-color: initial;
   margin-top: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
 }
 /*-------------------------------End_Popup-------------------------------------*/
 
@@ -1120,10 +1152,31 @@ border: 3px solid #ededed;
     .footer {
       width: 90%
     }
+/*-------------------------------Popup-------------------------------------*/
+  #popup {
+    background: rgba(0, 0, 0, 0.7);
+  }
 
     .popup-close {
+    width: 27px;
+    height: 27px;
+  }
 
-    }
+  .text-radio::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+  }
+
+
+  #popup-panel {
+    top: 196px;
+    left: 25%;
+  }
+
+
+/*-------------------------------End_Popup-------------------------------------*/
+
 }
 
 @media (width: 640px) {
@@ -1231,8 +1284,24 @@ border: 3px solid #ededed;
     width: 90%
   }
 
-  .popup-close {
+/*-------------------------------Popup----------------------------------------*/
+  #popup {
+    background: rgba(0, 0, 0, 0.7);
   }
+
+  .popup-close {
+    width: 27px;
+    height: 27px;
+  }
+
+  .text-radio::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+  }
+
+
+/*-------------------------------End_Popup-------------------------------------*/
 }
 
 @media (max-width: 639px) and (min-width: 359px) {
@@ -1446,27 +1515,50 @@ border: 3px solid #ededed;
   .footer {
     width: 90%
   }
+  /*-------------------------------Popup----------------------------------------*/
+  #popup-panel {
+    height: 500px;
+    width: 90%;
+    top: 0;
+    left: 6%;
+  }
 
-  .page {
-    padding: 20px;
-    width: 83%;
-    font-size: 12px;
-    margin-left: auto;
-    margin-right: auto;
+  .select-label {
+    line-height: 20px;
   }
 
   .popup-close {
-    margin-right: 10px;
+    width: 27px;
+    height: 27px;
   }
 
+  .text-radio::before {
+    content: "";
+    width: 27px;
+    height: 27px;
+  }
+
+  .page {
+    padding: 25px 25px 50px 25px;
+    width: 100%;
+    height: 100%;
+}
+
+  .popup-panel-radio {
+    margin-top: 15px;
+}
+  .radio-button {
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
   .field-textarea {
-    width: 93%;
-    font-size: 12px;
-    min-height: 150px;
-    margin-top: 12px;
-    width: 93%;
-    font-size: 14px;
-    border: 2px solid #dadada;
+    min-height: 120px;
+    max-height: 120px;
+    min-width: 260px;
+    max-width: 260px;
     padding: 10px;
   }
+/*-------------------------------End_Popup-------------------------------------*/
 }
