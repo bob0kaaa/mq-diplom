@@ -557,11 +557,11 @@
         </div>
       </footer>
       <!-- Popap -->
-      <div class="popup">
-        <div class="popup-panel">
-        <button class="popup-close" type="button"></button>
+      <div id="popup">
+        <div id="popup-panel">
+        <button class="popup-close" type="button" onclick="document.getElementById('popup').style.display='none';"></button>
         <div class="page">
-          <h2>ваш фидбек</h2>
+          <h2 class="popup-title">ваш фидбек</h2>
           <form class="form">
             <div class="form-group">
               <label class="select-group">
@@ -573,7 +573,7 @@
                 </select>
               </label>
             </div>
-            <div>
+            <div class="popup-panel-radio">
               <span class="radio-label">Вы подписаны на e-mail рассылку?</span>
               <div class="panel-radio">
                 <label class="radio-button">
@@ -594,9 +594,8 @@
               <button class="button button-submit" type="submit">отправить</button>
             </div>
           </form>
+          </div>
         </div>
-        
-      </div>
       </div>
       <!-- Popap End-->
   </body>
